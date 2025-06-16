@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickAsk GPT – AI Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon for all browsers -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Fallback for Apple devices (iOS icon) -->
+  <link rel="apple-touch-icon" href="/assets/logo.png" sizes="180x180" />
+
+  <!-- Optional: set theme color -->
+  <meta name="theme-color" content="#1e0033" />
+
+  <style>
+    :root {
+      --main-bg: linear-gradient(to bottom, #1e0033, #180028);
+      --section-bg: linear-gradient(to right, #240052, #1c0033);
+      --section-bg-alt: linear-gradient(to right, #1c0033, #240052);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --highlight: linear-gradient(to right, #8f44fd, #30c1ff);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--main-bg);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ không gian */
+      padding: 1rem 5vw;
+      background: #1b0030;
+      border-bottom: 1px solid #3c3c3c;
+    }
+    .logo {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-weight: 700;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-primary {
+      background: var(--highlight);
+      padding: 0.6rem 1.2rem;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .hero {
+      text-align: center;
+      padding: 8vh 5vw 4vh;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .hero h1 .highlight {
+      background: var(--highlight);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 1.5rem auto;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .section {
+      padding: 4rem 5vw;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 2rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .feature-box {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    .feature-box h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 5vw;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .lang-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .lang-dropdown button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .lang-dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #2a003a;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 8px;
+    }
+    .lang-dropdown-content a {
+      color: #fff;
+      padding: 10px 12px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .lang-dropdown-content a:hover {
+      background-color: #3c005a;
+    }
+    .lang-dropdown:hover .lang-dropdown-content {
+      display: block;
+    }
+    iframe {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      border-radius: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    /* Responsive riêng cho mobile */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .lang-dropdown-content {
+        right: 0; /* giữ dropdown gọn gàng trong mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="QuickAsk GPT logo" style="height: 32px;" />
+      </a>
+      <span style="font-weight: 700; font-size: 1.1rem; color: white;">QuickAsk GPT</span>
+    </div>
+
+    <nav>
+      <div class="lang-dropdown">
+        <button>🇺🇸 EN ▼</button>
+        <div class="lang-dropdown-content">
+          <a href="/en/">🇺🇸 EN</a>
+          <a href="/vi/">🇻🇳 VI</a>
+          <a href="/jp/">🇯🇵 JP</a>
+          <a href="/ko/">🇰🇷 KO</a>
+        </div>
+      </div>
+      <a href="https://forms.gle/example_contact_us" target="_blank">✉️ Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Stay on the Page. Ask or Translate Instantly.</h1>
+    <p>
+      Ask or translate anything instantly using ChatGPT, Claude, or Gemini. Automatically protects your tokens and sensitive data.
+    </p>
+    <div class="hero-buttons">
+      <a class="btn-primary" href="https://chromewebstore.google.com/detail/quickask-ai-translate-or/jnejgogaflifpdgecjfhpgdiabbeipag" target="_blank">Install Chrome Extension</a>
+      <button
+        class="btn-primary"
+        onclick="document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });"
+        style="background: transparent; border: 1px solid #8f44fd;">
+        How It Works
+      </button>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works" style="background: linear-gradient(to right, #240052, #1c0033); color: white; padding: 4rem 2rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; max-width: 1000px; margin: auto;">
+      <div style="flex: 1; min-width: 280px; background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 1rem;">
+        <h3 style="color: #fff;">Step 1: Highlight and Ask</h3>
+        <p style="color: #ccc;">Just highlight the text you want to ask or translate. Click “Ask AI” or “Translate” right from the page — no switching tabs.</p>
+        <h3 style="color: #fff; margin-top: 2rem;">Step 2: Popup Appears Instantly</h3>
+        <p style="color: #ccc;">Your selected AI model (ChatGPT, Claude, Gemini…) responds immediately in a smart popup. You can copy, edit, or continue chatting directly.</p>
+        <h3 style="color: #fff; margin-top: 2rem;">Step 3: Stay Secure</h3>
+        <p style="color: #ccc;">QuickAsk automatically masks sensitive data (tokens, emails, URLs…) before sending to AI — ensuring privacy and peace of mind.</p>
+      </div>
+      <div style="flex: 1; min-width: 280px; text-align: center;">
+        <h2 style="color: #fff;">🧩 How It Works</h2>
+        <p style="color: #ccc; max-width: 80%; margin: auto;">Understand how QuickAsk GPT streamlines your workflow in 3 simple steps.</p>
+      </div>
+    </div>
+    <div style="max-width: 960px; margin: auto; text-align: center;">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 2rem; border-radius: 0.5rem;">
+        <iframe
+          src="https://www.youtube.com/embed/8JSfjuAfxE0"
+          title="How QuickAsk GPT Works"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 0.5rem;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Keep your flow. Keep your data safe.</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>🌍 26+ Languages</h3>
+        <p>Translate instantly and fluently with context-aware AI support.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🧠 Multiple AI Models</h3>
+        <p>ChatGPT, Claude, Gemini – choose your favorite engine anytime.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🛡️ Token Protection</h3>
+        <p>Automatically mask emails, URLs, tokens before sending to AI.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🧩 Seamless UI</h3>
+        <p>Highlight → Ask → Get results — All inside your current tab.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🗂️ Custom Prompt</h3>
+        <p>Adjust tone, style, length by adding your own instructions.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📌 Whitelist/Blacklist</h3>
+        <p>Control exactly where the extension is active — for safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="audience" style="background: linear-gradient(to right, #1c0033, #240052); color: white; padding: 4rem 2rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; max-width: 1000px; margin: auto;">
+      <div style="flex: 1; min-width: 280px; text-align: center;">
+        <h2 style="color: #fff;">🎯 Who It’s For</h2>
+        <p style="color: #ccc; max-width: 80%; margin: auto;">QuickAsk GPT is designed for people who value clarity, efficiency, and seamless interaction with AI — wherever they are.</p>
+      </div>
+      <div style="flex: 1; min-width: 280px; background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 1rem;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 1rem;">🌐 Language learners who want translations with context</li>
+          <li style="margin-bottom: 1rem;">👨‍💻 Developers reading docs in foreign languages</li>
+          <li style="margin-bottom: 1rem;">💼 Professionals communicating with international clients</li>
+          <li style="margin-bottom: 1rem;">📣 Marketers rewriting or summarizing content</li>
+          <li style="margin-bottom: 1rem;">🎓 Students and researchers working with multilingual sources</li>
+          <li>🧠 Anyone who wants quick, AI-powered answers without breaking their flow</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #aaa;">
+    Built with ❤️ by QuickAsk Team. © 2025 QuickAsk GPT. All rights reserved.
+  </footer>
+</body>
+</html>
