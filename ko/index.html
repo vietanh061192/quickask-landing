@@ -17,8 +17,8 @@
   <meta name="keywords" content="AI 번역, AI 질문, ChatGPT 확장, 웹사이트 번역, 개인 정보 보호, QuickAsk GPT, Claude, Gemini">
   <meta name="author" content="QuickAsk Team">
   <title>브라우저 안에서 바로 사용할 수 있는 AI 도우미</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Favicon for all browsers -->
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
@@ -99,6 +99,7 @@
     .hero h1 .highlight {
       background: var(--highlight);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .hero p {
@@ -232,7 +233,7 @@
   <header>
     <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
       <a href="/">
-        <img src="/assets/logo.svg" alt="QuickAsk GPT logo" style="height: 32px;" />
+        <img src="/assets/logo.svg" alt="QuickAsk GPT logo" width="32" height="32" />
       </a>
       <span style="font-weight: 700; font-size: 1.1rem; color: white;">QuickAsk GPT</span>
     </div>
@@ -284,6 +285,7 @@
     <div style="max-width: 960px; margin: auto; text-align: center;">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 2rem; border-radius: 0.5rem;">
         <iframe
+          loading="lazy"
           src="https://www.youtube-nocookie.com/embed/8JSfjuAfxE0"
           title="QuickAsk GPT 사용 방법"
           frameborder="0"

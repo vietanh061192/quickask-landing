@@ -17,7 +17,8 @@
   <meta name="keywords" content="AI translation, ask AI, ChatGPT extension, translate webpage, AI privacy, QuickAsk GPT, Claude, Gemini">
   <meta name="author" content="QuickAsk Team">
   <title>QuickAsk GPT – AI Assistant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Favicon for all browsers -->
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
@@ -26,7 +27,7 @@
 
   <!-- Optional: set theme color -->
   <meta name="theme-color" content="#1e0033" />
-  <link rel="canonical" href="https://quickask.me" />
+  <link rel="canonical" href="https://quickask.me/en/" />
   <link rel="alternate" hreflang="en" href="https://quickask.me/en/" />
   <link rel="alternate" hreflang="vi" href="https://quickask.me/vi/" />
   <link rel="alternate" hreflang="ja" href="https://quickask.me/ja/" />
@@ -97,8 +98,10 @@
     .hero h1 .highlight {
       background: var(--highlight);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .hero p {
       max-width: 600px;
       margin: 1.5rem auto;
@@ -230,7 +233,7 @@
   <header>
     <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
       <a href="/">
-        <img src="/assets/logo.svg" alt="QuickAsk GPT logo" style="height: 32px;" />
+        <img src="/assets/logo.svg" alt="QuickAsk GPT logo" width="32" height="32" />
       </a>
       <span style="font-weight: 700; font-size: 1.1rem; color: white;">QuickAsk GPT</span>
     </div>
@@ -283,6 +286,7 @@
     <div style="max-width: 960px; margin: auto; text-align: center;">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 2rem; border-radius: 0.5rem;">
         <iframe
+          loading="lazy"
           src="https://www.youtube-nocookie.com/embed/8JSfjuAfxE0"
           title="How QuickAsk GPT Works"
           frameborder="0"
