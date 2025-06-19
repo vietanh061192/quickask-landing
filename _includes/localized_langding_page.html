@@ -1,19 +1,19 @@
----
-layout: default
-lang: vi
-permalink: /vi/
----
-
 <section class="hero">
   <h1>{{ site.data.lang[page.lang].hero.title }}</h1>
   <p>{{ site.data.lang[page.lang].hero.description }}</p>
   <div class="hero-buttons">
-    <a class="btn-primary" href="https://chromewebstore.google.com/detail/quickask-ai-translate-or/jnejgogaflifpdgecjfhpgdiabbeipag" target="_blank">
+    <a href="https://chromewebstore.google.com/detail/quickask-ai-translate-or/jnejgogaflifpdgecjfhpgdiabbeipag"
+      target="_blank"
+      style="display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600;
+              color: white; text-decoration: none; background: linear-gradient(to right, #a855f7, #38bdf8);">
       {{ site.data.lang[page.lang].hero.install_button }}
     </a>
-    <button class="btn-primary" onclick="document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });" style="background: transparent; border: 1px solid #8f44fd;">
+    <a href="/posts"
+      class="btn-primary"
+      style="display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600;
+              color: white; text-decoration: none; border: 1px solid #8f44fd; background: transparent;">
       {{ site.data.lang[page.lang].hero.how_it_works_button }}
-    </button>
+    </a>
   </div>
 </section>
 
@@ -36,7 +36,7 @@ permalink: /vi/
     <div class="video-wrapper">
       <img
         src="https://img.youtube.com/vi/8JSfjuAfxE0/maxresdefault.jpg"
-        alt="QuickAsk GPT – YouTube Video"
+        alt="QuickAsk AI – YouTube Video"
         onclick="loadYoutube()"
       />
       <button onclick="loadYoutube(event)" aria-label="Play video">

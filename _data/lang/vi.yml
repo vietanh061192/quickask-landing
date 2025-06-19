@@ -2,11 +2,11 @@ hero:
   title: "Hỏi - Dịch AI trên mọi website."
   description: "Hỏi hoặc dịch mọi thứ chỉ với một cú nhấp, sử dụng ChatGPT, Claude hoặc Gemini. Tự động bảo vệ token và dữ liệu nhạy cảm."
   install_button: "Cài đặt tiện ích Chrome"
-  how_it_works_button: "Cách hoạt động"
+  how_it_works_button: "💡 Chia sẻ hữu ích"
 
 how_it_works:
   title: "🧩 Cách hoạt động"
-  description: "Hiểu nhanh cách QuickAsk GPT hoạt động chỉ với 3 bước."
+  description: "Hiểu nhanh cách QuickAsk AI hoạt động chỉ với 3 bước."
   steps:
     - title: "Bước 1: Mở phần cài đặt của tiện ích và chọn AI bạn muốn sử dụng."
       description: "Bạn có thể chọn một trong ba mô hình AI: ChatGPT, Claude hoặc Gemini."
@@ -33,7 +33,7 @@ features:
 
 audience:
   title: "🎯 Ai nên dùng?"
-  description: "QuickAsk GPT được thiết kế dành cho những người coi trọng sự rõ ràng, hiệu quả và khả năng tương tác liền mạch với AI — ở bất kỳ đâu."
+  description: "QuickAsk AI được thiết kế dành cho những người coi trọng sự rõ ràng, hiệu quả và khả năng tương tác liền mạch với AI — ở bất kỳ đâu."
   list:
     - "🌐 Người học ngôn ngữ cần dịch sát nghĩa"
     - "👨‍💻 Lập trình viên đọc tài liệu tiếng nước ngoài"
@@ -45,4 +45,4 @@ audience:
 testimonials:
   title: "💬 Người dùng nói gì về chúng tôi"
 
-footer: "Được xây dựng với ❤️ bởi đội ngũ QuickAsk. © 2025 QuickAsk GPT. Đã đăng ký bản quyền."
+footer: "Được xây dựng với ❤️ bởi đội ngũ QuickAsk. © 2025 QuickAsk AI. Đã đăng ký bản quyền."

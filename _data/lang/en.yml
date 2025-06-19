@@ -2,11 +2,11 @@ hero:
   title: "Ask - Translate AI on any website."
   description: "Ask or translate anything with just one click using ChatGPT, Claude, or Gemini. Automatically protects tokens and sensitive data."
   install_button: "Install Chrome Extension"
-  how_it_works_button: "How It Works"
+  how_it_works_button: "💡 Useful Insights"
 
 how_it_works:
   title: "🧩 How It Works"
-  description: "Quickly understand how QuickAsk GPT works in just 3 steps."
+  description: "Quickly understand how QuickAsk AI works in just 3 steps."
   steps:
     - title: "Step 1: Open the extension settings and choose your preferred AI."
       description: "You can choose from three AI models: ChatGPT, Claude, or Gemini."
@@ -33,7 +33,7 @@ features:
 
 audience:
   title: "🎯 Who Is It For?"
-  description: "QuickAsk GPT is designed for those who value clarity, efficiency, and seamless interaction with AI — wherever they are."
+  description: "QuickAsk AI is designed for those who value clarity, efficiency, and seamless interaction with AI — wherever they are."
   list:
     - "🌐 Language learners needing accurate translations"
     - "👨‍💻 Developers reading documentation in foreign languages"
@@ -45,4 +45,4 @@ audience:
 testimonials:
   title: "💬 What Our Users Say"
 
-footer: "Built with ❤️ by QuickAsk Team. © 2025 QuickAsk GPT. All rights reserved."
+footer: "Built with ❤️ by QuickAsk Team. © 2025 QuickAsk AI. All rights reserved."

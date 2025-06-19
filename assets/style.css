@@ -8,6 +8,52 @@
 * {
   box-sizing: border-box;
 }
+.post_container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.post_container h1,
+.post_container h2,
+.post_container h3 {
+  font-weight: 700;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post_container p {
+  margin: 1rem 0;
+}
+
+.post_container ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.post_container li {
+  margin-bottom: 0.5rem;
+}
+
+.post_container a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.post_container hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -363,4 +409,75 @@ ul {
 .testimonial-card p {
   margin-top: 0.5rem;
   color: #ccc;
+}
+
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .post-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #2a0047;
+  border: 1px solid #4c1d95;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-title:hover {
+  color: #7c3aed; /* tím nhấn */
+  text-decoration: underline;
+}
+
+.post-excerpt {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: auto; /* 👈 Đẩy post-extra xuống nếu trên cao hơn */
+}
+
+.post-extra {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #bbb;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
 }

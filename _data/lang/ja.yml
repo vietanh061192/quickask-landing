@@ -2,11 +2,11 @@ hero:
   title: "すべてのウェブサイトでAIに質問・翻訳"
   description: "ChatGPT、Claude、Gemini を使って、ワンクリックであらゆる内容を質問・翻訳。トークンや機密データを自動的に保護します。"
   install_button: "Chrome拡張機能をインストール"
-  how_it_works_button: "使い方"
+  how_it_works_button: "💡 役立つシェア"
 
 how_it_works:
   title: "🧩 使い方"
-  description: "QuickAsk GPT の仕組みを3ステップで簡単に理解できます。"
+  description: "QuickAsk AI の仕組みを3ステップで簡単に理解できます。"
   steps:
     - title: "ステップ1：拡張機能の設定を開き、使用するAIを選択します。"
       description: "ChatGPT、Claude、Geminiの3つのAIモデルから選べます。"
@@ -33,7 +33,7 @@ features:
 
 audience:
   title: "🎯 対象ユーザー"
-  description: "QuickAsk GPT は、明快さ・効率・AIとのシームレスな連携を重視するすべての人に最適です。"
+  description: "QuickAsk AI は、明快さ・効率・AIとのシームレスな連携を重視するすべての人に最適です。"
   list:
     - "🌐 正確な翻訳を求める語学学習者"
     - "👨‍💻 外国語のドキュメントを読む開発者"
@@ -45,4 +45,4 @@ audience:
 testimonials:
   title: "💬 ユーザーの声"
 
-footer: "❤️ を込めて QuickAsk チームが開発しました。© 2025 QuickAsk GPT. 全著作権所有。"
+footer: "❤️ を込めて QuickAsk チームが開発しました。© 2025 QuickAsk AI. 全著作権所有。"

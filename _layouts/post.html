@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  {% include head.html %}
+  <body style="background: #1e0033;">
+    {% include header.html %}
+
+    <div class="post-share-button" style="text-align: center; margin-top: 3rem;">
+      <a href="/posts" class="btn-primary" style="
+          background: transparent;
+          border: 1px solid #8f44fd;
+          color: white;
+          padding: 0.75rem 1.5rem;
+          border-radius: 8px;
+          font-weight: 600;
+          text-decoration: none;
+          display: inline-block;
+          transition: all 0.2s ease;
+        ">
+        💡 {{ site.data.lang[page.lang].hero.how_it_works_button | default: "Useful Insights" }}
+      </a>
+    </div>
+    <div class="post_container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

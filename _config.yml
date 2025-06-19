@@ -1,6 +1,29 @@
-title: "QuickAsk GPT"
-plugins:
-  - jekyll-multiple-languages-plugin
-languages: ["en", "vi", "ja", "ko"]
+title: "QuickAsk AI - AI Assistant for Any Website"
+languages: ["en", "vi", "ja", "ko", "hi"]
 default_lang: "en"
 exclude: ["Gemfile", "Gemfile.lock", "node_modules"]
+repository: vietanh061192/quickask-landing
+url: "https://quickask.me"
+future: true
+
+# Default setting
+defaults:
+  -
+    scope:
+      path: "" # Áp dụng cho toàn bộ site
+    values:
+      layout: post
+      category: post
+
+# Pagination
+plugins:
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-sitemap
+paginate: 10
+paginate_path: "/blog/page:num"
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed

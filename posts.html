@@ -1,0 +1,36 @@
+---
+layout: posts
+title: Posts
+permalink: /posts/
+---
+
+<div class="post-list" style="max-width: 960px; margin: 2rem auto; display: flex; flex-direction: column; gap: 2rem;">
+  <div class="post-grid">
+    {% for post in site.posts %}
+      <div class="post-box">
+        <div class="post-meta">
+          <span class="post-tag">🧠 QuickAsk Sharing</span>
+          <span class="post-date">📅 {{ post.date | date: "%d/%m/%Y" }}</span>
+        </div>
+
+        <a href="{{ post.url }}" class="post-title">
+          {{ post.title }}
+        </a>
+
+        <p class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 120 }}
+        </p>
+
+        <div class="post-extra">
+          <div class="post-extra">
+            {% assign minutes = post.content | number_of_words | divided_by: 200 | ceil %}
+            <span>⏱ {% if minutes < 1 %}1{% else %}{{ minutes }}{% endif %} min read</span>
+            {% comment %}
+              <span>👁️ {{ post.views | default: '3.7K' }}</span>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
