@@ -1,0 +1,6 @@
+title: "QuickAsk GPT"
+plugins:
+  - jekyll-multiple-languages-plugin
+languages: ["en", "vi", "ja", "ko"]
+default_lang: "en"
+exclude: ["Gemfile", "Gemfile.lock", "node_modules"]

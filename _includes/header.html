@@ -1,0 +1,43 @@
+<header>
+  <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+    <a href="/">
+      <img src="/assets/logo.svg" alt="QuickAsk GPT logo" width="32" height="32" />
+    </a>
+    <span style="font-weight: 700; font-size: 1.1rem; color: white;">QuickAsk GPT</span>
+  </div>
+  <nav>
+    <div class="lang-dropdown">
+      {% case page.lang %}
+        {% when "vi" %}
+          <button>🇻🇳 VI ▼</button>
+        {% when "ja" %}
+          <button>🇯🇵 JA ▼</button>
+        {% when "ko" %}
+          <button>🇰🇷 KO ▼</button>
+        {% when "hi" %}
+          <button>🇮🇳 HI ▼</button>
+        {% else %}
+          <button>🇺🇸 EN ▼</button>
+      {% endcase %}
+      <div class="lang-dropdown-content">
+        <a href="/en/">🇺🇸 EN</a>
+        <a href="/vi/">🇻🇳 VI</a>
+        <a href="/ja/">🇯🇵 JA</a>
+        <a href="/ko/">🇰🇷 KO</a>
+        <a href="/hi/">🇮🇳 HI</a>
+      </div>
+    </div>
+    {% case page.lang %}
+      {% when "vi" %}
+        <a href="https://docs.google.com/forms/d/1xkBzcLISO6caQhoXGUXRks2gckM1xmVmzp2EBKzfIv8/preview" target="_blank">✉️ Liên hệ</a>
+      {% when "ja" %}
+        <a href="https://docs.google.com/forms/d/1xkBzcLISO6caQhoXGUXRks2gckM1xmVmzp2EBKzfIv8/preview" target="_blank">✉️ お問い合わせ</a>
+      {% when "hi" %}
+        <a href="https://docs.google.com/forms/d/1xkBzcLISO6caQhoXGUXRks2gckM1xmVmzp2EBKzfIv8/preview" target="_blank">✉️ संपर्क करें</a>
+      {% when "ko" %}
+        <a href="https://docs.google.com/forms/d/1xkBzcLISO6caQhoXGUXRks2gckM1xmVmzp2EBKzfIv8/preview" target="_blank">✉️ 문의하기</a>
+      {% else %}
+        <a href="https://docs.google.com/forms/d/1xkBzcLISO6caQhoXGUXRks2gckM1xmVmzp2EBKzfIv8/preview" target="_blank">✉️ Contact</a>
+    {% endcase %}
+  </nav>
+</header>

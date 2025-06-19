@@ -1,0 +1,48 @@
+hero:
+  title: "Ask - Translate AI on any website."
+  description: "Ask or translate anything with just one click using ChatGPT, Claude, or Gemini. Automatically protects tokens and sensitive data."
+  install_button: "Install Chrome Extension"
+  how_it_works_button: "How It Works"
+
+how_it_works:
+  title: "🧩 How It Works"
+  description: "Quickly understand how QuickAsk GPT works in just 3 steps."
+  steps:
+    - title: "Step 1: Open the extension settings and choose your preferred AI."
+      description: "You can choose from three AI models: ChatGPT, Claude, or Gemini."
+    - title: "Step 2: Highlight the text — two buttons 'Ask AI' and 'Trans' will appear. Choose based on your need."
+      description: "Both buttons will copy the selected text, mask sensitive info like tokens or links, and paste it into the AI chat box."
+    - title: "Step 3: Automatically translate the text using a preset prompt"
+      description: "You can customize the translation tone in the extension's settings."
+
+features:
+  title: "Switch tabs seamlessly while keeping your data secure when interacting with AI."
+  items:
+    - title: "🌍 Supports 26+ Languages"
+      description: "Translate naturally with context awareness."
+    - title: "🧠 Multiple AI Models"
+      description: "Choose ChatGPT, Claude, Gemini..."
+    - title: "🛡️ Token Protection"
+      description: "Automatically masks tokens, emails, URLs..."
+    - title: "🧩 Seamless Interface"
+      description: "Highlight → Ask → Get results right in your current tab."
+    - title: "🗂️ Custom Prompts"
+      description: "Adjust tone, style, length as needed..."
+    - title: "📌 Whitelist / Blacklist"
+      description: "Control where the extension is active."
+
+audience:
+  title: "🎯 Who Is It For?"
+  description: "QuickAsk GPT is designed for those who value clarity, efficiency, and seamless interaction with AI — wherever they are."
+  list:
+    - "🌐 Language learners needing accurate translations"
+    - "👨‍💻 Developers reading documentation in foreign languages"
+    - "💼 Professionals communicating with international clients"
+    - "📣 Marketers needing to rewrite or summarize content"
+    - "🎓 Students and researchers using multilingual sources"
+    - "🧠 Anyone who needs quick AI assistance without interrupting their workflow"
+
+testimonials:
+  title: "💬 What Our Users Say"
+
+footer: "Built with ❤️ by QuickAsk Team. © 2025 QuickAsk GPT. All rights reserved."

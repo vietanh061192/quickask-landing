@@ -1,0 +1,48 @@
+hero:
+  title: "Hỏi - Dịch AI trên mọi website."
+  description: "Hỏi hoặc dịch mọi thứ chỉ với một cú nhấp, sử dụng ChatGPT, Claude hoặc Gemini. Tự động bảo vệ token và dữ liệu nhạy cảm."
+  install_button: "Cài đặt tiện ích Chrome"
+  how_it_works_button: "Cách hoạt động"
+
+how_it_works:
+  title: "🧩 Cách hoạt động"
+  description: "Hiểu nhanh cách QuickAsk GPT hoạt động chỉ với 3 bước."
+  steps:
+    - title: "Bước 1: Mở phần cài đặt của tiện ích và chọn AI bạn muốn sử dụng."
+      description: "Bạn có thể chọn một trong ba mô hình AI: ChatGPT, Claude hoặc Gemini."
+    - title: "Bước 2: Bôi đen đoạn văn bản — hai nút \"Ask AI\" và \"Trans\" sẽ xuất hiện. Chọn theo nhu cầu của bạn."
+      description: "Cả hai nút đều sẽ sao chép đoạn văn bản đã chọn, ẩn các thông tin nhạy cảm như token hoặc liên kết, và dán vào ô chat của AI."
+    - title: "Bước 3: Tự động dịch đoạn văn bản bằng câu lệnh có sẵn"
+      description: "Bạn có thể tuỳ chỉnh giọng điệu bản dịch trong phần cài đặt của tiện ích."
+
+features:
+  title: "Chuyển tab nhanh gọn, giữ an toàn dữ liệu khi hỏi đáp với AI."
+  items:
+    - title: "🌍 Hỗ trợ 26+ ngôn ngữ"
+      description: "Dịch tự nhiên, hiểu ngữ cảnh."
+    - title: "🧠 Nhiều mô hình AI"
+      description: "Chọn ChatGPT, Claude, Gemini..."
+    - title: "🛡️ Bảo vệ Token"
+      description: "Tự động che token, email, URL..."
+    - title: "🧩 Giao diện liền mạch"
+      description: "Bôi đen → Hỏi → Kết quả ngay tại tab hiện tại."
+    - title: "🗂️ Tuỳ chỉnh prompt"
+      description: "Điều chỉnh giọng điệu, phong cách, độ dài..."
+    - title: "📌 Whitelist / Blacklist"
+      description: "Kiểm soát tiện ích hoạt động ở đâu."
+
+audience:
+  title: "🎯 Ai nên dùng?"
+  description: "QuickAsk GPT được thiết kế dành cho những người coi trọng sự rõ ràng, hiệu quả và khả năng tương tác liền mạch với AI — ở bất kỳ đâu."
+  list:
+    - "🌐 Người học ngôn ngữ cần dịch sát nghĩa"
+    - "👨‍💻 Lập trình viên đọc tài liệu tiếng nước ngoài"
+    - "💼 Người đi làm giao tiếp khách hàng quốc tế"
+    - "📣 Marketer cần viết lại hoặc tóm tắt nội dung"
+    - "🎓 Sinh viên, nghiên cứu sinh dùng nhiều nguồn đa ngôn ngữ"
+    - "🧠 Mọi người cần hỏi AI nhanh mà không ngắt mạch làm việc"
+
+testimonials:
+  title: "💬 Người dùng nói gì về chúng tôi"
+
+footer: "Được xây dựng với ❤️ bởi đội ngũ QuickAsk. © 2025 QuickAsk GPT. Đã đăng ký bản quyền."

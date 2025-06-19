@@ -1,0 +1,48 @@
+hero:
+  title: "すべてのウェブサイトでAIに質問・翻訳"
+  description: "ChatGPT、Claude、Gemini を使って、ワンクリックであらゆる内容を質問・翻訳。トークンや機密データを自動的に保護します。"
+  install_button: "Chrome拡張機能をインストール"
+  how_it_works_button: "使い方"
+
+how_it_works:
+  title: "🧩 使い方"
+  description: "QuickAsk GPT の仕組みを3ステップで簡単に理解できます。"
+  steps:
+    - title: "ステップ1：拡張機能の設定を開き、使用するAIを選択します。"
+      description: "ChatGPT、Claude、Geminiの3つのAIモデルから選べます。"
+    - title: "ステップ2：テキストを選択すると「Ask AI」と「Trans」のボタンが表示されます。必要に応じて選択してください。"
+      description: "選択したテキストはコピーされ、トークンやリンクなどの機密情報がマスクされた上でAIのチャットボックスに貼り付けられます。"
+    - title: "ステップ3：事前設定されたプロンプトで自動翻訳"
+      description: "拡張機能の設定で翻訳の口調やスタイルをカスタマイズできます。"
+
+features:
+  title: "タブを切り替えずにAIと安全にやり取り。"
+  items:
+    - title: "🌍 26以上の言語に対応"
+      description: "自然で文脈を理解した翻訳が可能です。"
+    - title: "🧠 複数のAIモデル"
+      description: "ChatGPT、Claude、Gemini などから選択可能。"
+    - title: "🛡️ トークンの保護"
+      description: "トークン、メール、URLを自動的にマスク。"
+    - title: "🧩 シームレスなインターフェース"
+      description: "選択 → 質問 → 結果が同じタブに表示されます。"
+    - title: "🗂️ カスタムプロンプト"
+      description: "トーン、スタイル、長さなどを調整可能。"
+    - title: "📌 ホワイトリスト / ブラックリスト"
+      description: "拡張機能の有効なサイトを細かく制御可能。"
+
+audience:
+  title: "🎯 対象ユーザー"
+  description: "QuickAsk GPT は、明快さ・効率・AIとのシームレスな連携を重視するすべての人に最適です。"
+  list:
+    - "🌐 正確な翻訳を求める語学学習者"
+    - "👨‍💻 外国語のドキュメントを読む開発者"
+    - "💼 海外のクライアントとやり取りするビジネスパーソン"
+    - "📣 コンテンツのリライトや要約が必要なマーケター"
+    - "🎓 多言語情報源を扱う学生や研究者"
+    - "🧠 作業を中断せずにAIを活用したいすべての人"
+
+testimonials:
+  title: "💬 ユーザーの声"
+
+footer: "❤️ を込めて QuickAsk チームが開発しました。© 2025 QuickAsk GPT. 全著作権所有。"

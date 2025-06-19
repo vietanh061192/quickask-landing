@@ -1,0 +1,93 @@
+---
+layout: default
+lang: vi
+permalink: /vi/
+---
+
+<section class="hero">
+  <h1>{{ site.data.lang[page.lang].hero.title }}</h1>
+  <p>{{ site.data.lang[page.lang].hero.description }}</p>
+  <div class="hero-buttons">
+    <a class="btn-primary" href="https://chromewebstore.google.com/detail/quickask-ai-translate-or/jnejgogaflifpdgecjfhpgdiabbeipag" target="_blank">
+      {{ site.data.lang[page.lang].hero.install_button }}
+    </a>
+    <button class="btn-primary" onclick="document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });" style="background: transparent; border: 1px solid #8f44fd;">
+      {{ site.data.lang[page.lang].hero.how_it_works_button }}
+    </button>
+  </div>
+</section>
+
+<section class="section" id="how-it-works">
+  <div class="how-content">
+    <div class="how-steps">
+      {% for step in site.data.lang[page.lang].how_it_works.steps %}
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="how-description">
+      <h2>{{ site.data.lang[page.lang].how_it_works.title }}</h2>
+      <p>{{ site.data.lang[page.lang].how_it_works.description }}</p>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <div class="video-wrapper">
+      <img
+        src="https://img.youtube.com/vi/8JSfjuAfxE0/maxresdefault.jpg"
+        alt="QuickAsk GPT – YouTube Video"
+        onclick="loadYoutube()"
+      />
+      <button onclick="loadYoutube(event)" aria-label="Play video">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <h2>{{ site.data.lang[page.lang].features.title }}</h2>
+  <div class="features">
+    {% for item in site.data.lang[page.lang].features.items %}
+      <div class="feature-box">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-audience" id="audience">
+  <div class="audience-container">
+    <div class="audience-intro">
+      <h2>{{ site.data.lang[page.lang].audience.title }}</h2>
+      <p>{{ site.data.lang[page.lang].audience.description }}</p>
+    </div>
+    <div class="audience-list">
+      <ul>
+        {% for item in site.data.lang[page.lang].audience.list %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <h2>{{ site.data.lang[page.lang].testimonials.title }}</h2>
+  <div class="testimonial-list">
+    <div class="testimonial-card">
+      <strong>Huong Nguyen Xuan ⭐⭐⭐⭐⭐</strong><br/>
+      <small>16 tháng 6, 2025</small>
+      <p>Sử dụng dễ dàng, thuận tiện. Thao tác đơn giản, nhanh chóng. Recommend nên sử dụng nhé.</p>
+    </div>
+    <div class="testimonial-card">
+      <strong>Thao Nguyen The ⭐⭐⭐⭐⭐</strong><br/>
+      <small>6 tháng 5, 2025</small>
+      <p>ngon, dùng tốt lắm</p>
+    </div>
+  </div>
+</section>
