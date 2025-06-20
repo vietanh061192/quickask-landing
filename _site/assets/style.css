@@ -1,0 +1,483 @@
+:root {
+  --main-bg: linear-gradient(to bottom, #1e0033, #180028);
+  --section-bg: linear-gradient(to right, #240052, #1c0033);
+  --section-bg-alt: linear-gradient(to right, #1c0033, #240052);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --highlight: linear-gradient(to right, #8f44fd, #30c1ff);
+}
+* {
+  box-sizing: border-box;
+}
+.post_container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.post_container h1,
+.post_container h2,
+.post_container h3 {
+  font-weight: 700;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post_container p {
+  margin: 1rem 0;
+}
+
+.post_container ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.post_container li {
+  margin-bottom: 0.5rem;
+}
+
+.post_container a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.post_container hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--main-bg);
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ không gian */
+  padding: 1rem 5vw;
+  background: #1b0030;
+  border-bottom: 1px solid #3c3c3c;
+}
+.logo {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: #fff;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-primary {
+  background: var(--highlight);
+  padding: 0.6rem 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.hero {
+  text-align: center;
+  padding: 8vh 5vw 4vh;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hero h1 .highlight {
+  background: var(--highlight);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  color: #ccc;
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.section {
+  padding: 4rem 5vw;
+  text-align: center;
+}
+.section h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.feature-box {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.feature-box h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.feature-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+footer {
+  text-align: center;
+  padding: 2rem 5vw;
+  font-size: 0.85rem;
+  color: #888;
+}
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.lang-dropdown button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.lang-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #2a003a;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+.lang-dropdown-content a {
+  color: #fff;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lang-dropdown-content a:hover {
+  background-color: #3c005a;
+}
+.lang-dropdown:hover .lang-dropdown-content {
+  display: block;
+}
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Responsive riêng cho mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .lang-dropdown-content {
+    right: 0; /* giữ dropdown gọn gàng trong mobile */
+  }
+}
+
+.section-audience {
+  background: linear-gradient(to right, #1c0033, #240052);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.audience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.audience-intro {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.audience-intro h2 {
+  color: #fff;
+}
+
+.audience-intro p {
+  color: #ccc;
+  max-width: 80%;
+  margin: auto;
+}
+
+.audience-list {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.audience-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.audience-list li {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+#how-it-works {
+  background: linear-gradient(to right, #240052, #1c0033);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.how-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.how-steps {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.how-steps h3 {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.how-steps h3:first-child {
+  margin-top: 0;
+}
+
+.how-steps p {
+  color: #ccc;
+}
+
+.how-description {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.how-description h2 {
+  color: #fff;
+}
+
+.how-description p {
+  color: #ccc;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.video-wrapper img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.video-wrapper button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonials {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #333;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+#testimonials h2 {
+  margin-bottom: 2rem;
+}
+
+.testimonial-list {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  gap: 2rem;
+  text-align: left;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.testimonial-card p {
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .post-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #2a0047;
+  border: 1px solid #4c1d95;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-title:hover {
+  color: #7c3aed; /* tím nhấn */
+  text-decoration: underline;
+}
+
+.post-excerpt {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: auto; /* 👈 Đẩy post-extra xuống nếu trên cao hơn */
+}
+
+.post-extra {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #bbb;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
