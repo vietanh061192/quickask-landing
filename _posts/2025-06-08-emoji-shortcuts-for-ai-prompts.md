@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emoji Shortcuts for Prompting AI — Lazy but Genius"
-permalink: /emoji-shortcuts-for-ai-prompts/
+permalink: /posts/emoji-shortcuts-for-ai-prompts/
 tags: [PromptTips, ChatGPT, EmojiHack, AItips, UX]
 date: 2025-06-08
 ---

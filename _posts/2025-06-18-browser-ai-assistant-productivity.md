@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How a Browser-Based AI Assistant Boosted My Daily Productivity"
-permalink: /ai-productivity-browser/
+permalink: /posts/ai-productivity-browser/
+date: 2025-06-18
 ---
 # How a Browser-Based AI Assistant Boosted My Daily Productivity
 

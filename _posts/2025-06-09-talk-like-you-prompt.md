@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Talk Like You Prompt — Or Prompt Like You Talk?"
-permalink: /talk-like-you-prompt/
+permalink: /posts/talk-like-you-prompt/
 tags: [PromptTips, ChatGPT, Gemini, UXwriting, AItips]
 date: 2025-06-09
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rewrite Faster by Delegating Context — AI Isn’t a Mind Reader"
-permalink: /rewrite-faster-by-delegating-context/
+permalink: /posts/rewrite-faster-by-delegating-context/
 tags: [AItips, ChatGPT, Claude, WritingHacks, UX]
 date: 2025-06-07
 ---

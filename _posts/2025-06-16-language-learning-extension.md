@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How a Browser-Based AI Assistant Supercharged My Language Learning"
-permalink: /language-learning-ai-extension/
+permalink: /posts/language-learning-ai-extension/
+date: 2025-06-16
 ---
 # How a Browser-Based AI Assistant Supercharged My Language Learning
 

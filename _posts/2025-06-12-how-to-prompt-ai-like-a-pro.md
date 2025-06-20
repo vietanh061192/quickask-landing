@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "How to Prompt AI Like a Pro — Without Sounding Like One"
-permalink: /how-to-prompt-ai-like-a-pro/
+permalink: /posts/how-to-prompt-ai-like-a-pro/
 tags: [PromptEngineering, ChatGPT, Claude, Gemini, AItips, UX]
+date: 2025-06-12
 ---
 
 # 🤔 How to Prompt AI Like a Pro — Without Sounding Like One

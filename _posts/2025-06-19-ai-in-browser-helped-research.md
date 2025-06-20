@@ -3,7 +3,8 @@ layout: post
 title: "How a Browser AI Assistant Helped Me Research Smarter"
 date: 2025-06-19 10:00:00 +0700
 title: "How a Browser AI Assistant Helped Me Research Smarter"
-permalink: /ai-assistant-research/
+permalink: /posts/blog/ai-assistant-research/
+date: 2025-06-19
 tags:
   - ai
   - productivity

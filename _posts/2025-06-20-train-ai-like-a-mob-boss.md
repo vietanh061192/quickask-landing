@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Train Your AI Like a Mob Boss 🕶️"
-permalink: /train-ai-like-a-mob-boss/
+permalink: /posts/train-ai-like-a-mob-boss/
 tags: [AItips, PromptEngineering, ProductivityHacks, ChatGPT, QuickAskAI]
+date: 2025-06-20
 ---
 
 # 🤖 A Tiny AI Tip With Big Impact — You Might Already Know It

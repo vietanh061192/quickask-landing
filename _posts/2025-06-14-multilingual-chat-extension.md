@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Chat Naturally in Any Language — Without Switching Tabs"
-permalink: /multilingual-chat-extension/
+permalink: /posts/multilingual-chat-extension/
 tags: [Multilingual, Productivity, LanguageLearning, RemoteCommunication]
+date: 2025-06-14
 ---
 
 # 🌍 Chat Naturally in Any Language — Without Switching Tabs

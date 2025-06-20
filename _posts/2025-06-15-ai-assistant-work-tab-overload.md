@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "From Tab Chaos to Calm: How an AI Assistant Simplified My Workday"
-permalink: /ai-assistant-tab-overload/
+permalink: /posts/ai-assistant-tab-overload/
+date: 2025-06-15
 ---
 # From Tab Chaos to Calm: How an AI Assistant Simplified My Workday
 💼 I work in a fast-paced environment where I'm constantly researching, comparing documents, and responding to messages. My Chrome browser used to look like a battlefield—**20+ tabs open**, jumping between ChatGPT, Google Docs, and Slack.

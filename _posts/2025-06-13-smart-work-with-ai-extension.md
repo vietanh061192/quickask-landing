@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Working Smarter with AI: From Tab Switching to Secure Prompting"
-permalink: /smart-work-with-ai-extension/
+permalink: /posts/smart-work-with-ai-extension/
+date: 2025-06-13
 ---
 # Working Smarter with AI: From Tab Switching to Secure Prompting
 🔐 A few months ago, I was juggling between multiple tabs daily—Slack, emails, spreadsheets, dashboards—and then, of course, Gemini, ChatGPT, or Claude whenever I needed a quick insight or summary.
