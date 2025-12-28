@@ -5,42 +5,50 @@ hero:
   how_it_works_button: "💡 Chia sẻ hữu ích"
 
 how_it_works:
-  title: "🧩 Cách hoạt động"
-  description: "Hiểu nhanh cách QuickAsk AI hoạt động chỉ với 3 bước."
+  title: "🧩 QuickAsk AI giúp bạn như thế nào"
+  description: "QuickAsk AI cung cấp một tập tính năng nhẹ nhàng, phù hợp tự nhiên với quy trình làm việc hàng ngày của bạn."
   steps:
-    - title: "Bước 1: Mở phần cài đặt của tiện ích và chọn AI bạn muốn sử dụng."
-      description: "Bạn có thể chọn một trong ba mô hình AI: ChatGPT, Claude hoặc Gemini."
-    - title: "Bước 2: Bôi đen đoạn văn bản — hai nút \"Ask AI\" và \"Trans\" sẽ xuất hiện. Chọn theo nhu cầu của bạn."
-      description: "Cả hai nút đều sẽ sao chép đoạn văn bản đã chọn, ẩn các thông tin nhạy cảm như token hoặc liên kết, và dán vào ô chat của AI."
-    - title: "Bước 3: Tự động dịch đoạn văn bản bằng câu lệnh có sẵn"
-      description: "Bạn có thể tuỳ chỉnh giọng điệu bản dịch trong phần cài đặt của tiện ích."
+    - title: "AI trợ lý ở mọi trang"
+      description: "Bôi đen văn bản trên trang để ngay lập tức hỏi AI hoặc dịch bằng ChatGPT, Claude, hoặc Gemini. Dữ liệu nhạy cảm như token hoặc liên kết sẽ được tự động che." 
+
+    - title: "Nhiệm vụ nhỏ và nhắc nhở"
+      description: "Tạo các nhiệm vụ hàng ngày nhỏ và nhắc nhở để giữ tập trung. Dành cho ghi chú nhanh và việc cần làm đơn giản — không phải quản lý dự án nặng." 
+
+    - title: "Ghi chú nhanh giữa các tab"
+      description: "Viết ghi chú ngay lập tức khi duyệt web. Ghi chú có thể ghim, lưu và hiển thị trên nhiều tab để bạn không mất ngữ cảnh."
 
 features:
-  title: "Chuyển tab nhanh gọn, giữ an toàn dữ liệu khi hỏi đáp với AI."
+  title: "🚀 Những gì bạn có thể làm với QuickAsk AI"
+  description: "Một tập tính năng đơn giản hỗ trợ tương tác AI, ghi chú nhanh và quản lý nhiệm vụ nhẹ — mà không cần rời tab hiện tại."
   items:
-    - title: "🌍 Hỗ trợ 26+ ngôn ngữ"
-      description: "Dịch tự nhiên, hiểu ngữ cảnh."
-    - title: "🧠 Nhiều mô hình AI"
-      description: "Chọn ChatGPT, Claude, Gemini..."
-    - title: "🛡️ Bảo vệ Token"
-      description: "Tự động che token, email, URL..."
-    - title: "🧩 Giao diện liền mạch"
-      description: "Bôi đen → Hỏi → Kết quả ngay tại tab hiện tại."
-    - title: "🗂️ Tuỳ chỉnh prompt"
-      description: "Điều chỉnh giọng điệu, phong cách, độ dài..."
-    - title: "📌 Whitelist / Blacklist"
-      description: "Kiểm soát tiện ích hoạt động ở đâu."
+    - title: "🧠 AI Assistant trên mọi trang"
+      description: "Bôi đen văn bản trên bất kỳ trang nào để hỏi AI hoặc dịch với ChatGPT, Claude, hoặc Gemini — không cần chuyển tab."
+
+    - title: "🌍 Dịch bởi AI"
+      description: "Dịch sang 26+ ngôn ngữ với câu lệnh hiểu ngữ cảnh. Tuỳ chỉnh giọng điệu, phong cách và mức độ chuyên nghiệp."
+
+    - title: "� Ghi chú nhanh giữa các tab"
+      description: "Ghi chú ngay lập tức khi duyệt web; có thể ghim và chia sẻ giữa các tab để giữ nguyên ngữ cảnh."
+
+    - title: "⏰ Nhiệm vụ nhỏ & Nhắc nhở"
+      description: "Tạo nhiệm vụ hàng ngày và nhắc nhở để duy trì sự tập trung — dành cho việc nhỏ, không phải quản lý dự án lớn."
+
+    - title: "⌨️ Hành trình sử dụng phím tắt"
+      description: "Sử dụng phím tắt để kích hoạt nhanh các hành động, giúp bạn giữ nhịp làm việc không gián đoạn."
+
+    - title: "�️ Quyền riêng tư & Kiểm soát"
+      description: "Dữ liệu nhạy cảm như token, email và URL được tự động ẩn. Kiểm soát nơi tiện ích hoạt động bằng whitelist/blacklist."
 
 audience:
-  title: "🎯 Ai nên dùng?"
-  description: "QuickAsk AI được thiết kế dành cho những người coi trọng sự rõ ràng, hiệu quả và khả năng tương tác liền mạch với AI — ở bất kỳ đâu."
+  title: "🎯 Ai nên dùng QuickAsk AI"
+  description: "QuickAsk AI được xây dựng cho những người làm việc, học và suy nghĩ trực tiếp trên trình duyệt — và muốn AI, ghi chú, nhắc nhở mà không làm gián đoạn tập trung."
   list:
-    - "🌐 Người học ngôn ngữ cần dịch sát nghĩa"
-    - "👨‍💻 Lập trình viên đọc tài liệu tiếng nước ngoài"
-    - "💼 Người đi làm giao tiếp khách hàng quốc tế"
-    - "📣 Marketer cần viết lại hoặc tóm tắt nội dung"
-    - "🎓 Sinh viên, nghiên cứu sinh dùng nhiều nguồn đa ngôn ngữ"
-    - "🧠 Mọi người cần hỏi AI nhanh mà không ngắt mạch làm việc"
+    - "👨‍💻 Lập trình viên đọc tài liệu, spec hoặc mã bằng nhiều ngôn ngữ"
+    - "🎓 Sinh viên học tập, nghiên cứu và ghi chú nhanh khi duyệt web"
+    - "💼 Chuyên gia làm việc với nội dung hoặc khách hàng quốc tế"
+    - "📣 Người sáng tạo nội dung và marketer viết lại, tóm tắt hoặc dịch văn bản"
+    - "🧠 Những người làm tri thức cần ghi chú nhanh và nhắc nhở nhỏ trong công việc hàng ngày"
+    - "⌨️ Bất kỳ ai thích công cụ ưu tiên bàn phím và quy trình làm việc ít bị phân tâm"
 
 testimonials:
   title: "💬 Người dùng nói gì về chúng tôi"

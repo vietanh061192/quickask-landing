@@ -1,7 +1,20 @@
 function loadYoutube(event) {
-  const container = event.currentTarget.closest(".video-wrapper");
+  // ensure the click doesn't cause navigation or other handlers to interrupt
+  if (event && typeof event.preventDefault === 'function') {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  // get the element that has the .video-wrapper ancestor (support clicks on child elements)
+  const trigger = event.currentTarget || event.target;
+  const container = trigger.closest(".video-wrapper");
+  if (!container) return;
+
+  // avoid creating a second iframe if already loaded
+  if (container.querySelector('iframe')) return;
   const iframe = document.createElement("iframe");
-  iframe.src = "https://www.youtube.com/embed/8JSfjuAfxE0?autoplay=1&vq=hd1080";
+  // include autoplay so the video starts immediately after the user click
+  iframe.src = "https://www.youtube.com/embed/qz8eBPoGbUU?rel=0&modestbranding=1&autoplay=1";
   iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
   iframe.allowFullscreen = true;
   iframe.frameBorder = 0;

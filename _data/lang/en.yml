@@ -5,42 +5,50 @@ hero:
   how_it_works_button: "💡 Useful Insights"
 
 how_it_works:
-  title: "🧩 How It Works"
-  description: "Quickly understand how QuickAsk AI works in just 3 steps."
+  title: "🧩 How QuickAsk AI Helps You"
+  description: "A lightweight set of features designed to fit naturally into your daily workflow."
   steps:
-    - title: "Step 1: Open the extension settings and choose your preferred AI."
-      description: "You can choose from three AI models: ChatGPT, Claude, or Gemini."
-    - title: "Step 2: Highlight the text — two buttons 'Ask AI' and 'Trans' will appear. Choose based on your need."
-      description: "Both buttons will copy the selected text, mask sensitive info like tokens or links, and paste it into the AI chat box."
-    - title: "Step 3: Automatically translate the text using a preset prompt"
-      description: "You can customize the translation tone in the extension's settings."
+    - title: "AI Assistant Anywhere"
+      description: "Highlight any text on a webpage to instantly ask AI or translate it using ChatGPT, Claude, or Gemini. Sensitive data like tokens or links are automatically masked."
+
+    - title: "Mini Tasks & Reminders"
+      description: "Create small daily tasks with reminders to stay focused. Designed for quick notes and simple to-dos — not heavy project management."
+
+    - title: "Quick Notes Across Tabs"
+      description: "Write notes instantly while browsing. Notes can be pinned, saved, and shown across multiple tabs so you never lose context."
 
 features:
-  title: "Switch tabs seamlessly while keeping your data secure when interacting with AI."
+  title: "🚀 What You Can Do with QuickAsk AI"
+  description: "A simple set of features designed to support AI interaction, quick notes, and lightweight task management — without leaving your current tab."
   items:
-    - title: "🌍 Supports 26+ Languages"
-      description: "Translate naturally with context awareness."
-    - title: "🧠 Multiple AI Models"
-      description: "Choose ChatGPT, Claude, Gemini..."
-    - title: "🛡️ Token Protection"
-      description: "Automatically masks tokens, emails, URLs..."
-    - title: "🧩 Seamless Interface"
-      description: "Highlight → Ask → Get results right in your current tab."
-    - title: "🗂️ Custom Prompts"
-      description: "Adjust tone, style, length as needed..."
-    - title: "📌 Whitelist / Blacklist"
-      description: "Control where the extension is active."
+    - title: "🧠 AI Assistant on Any Page"
+      description: "Highlight text on any website to instantly ask AI or translate using ChatGPT, Claude, or Gemini — all without switching tabs."
+
+    - title: "🌍 AI-Powered Translation"
+      description: "Translate text into 26+ languages with context-aware prompts. Customize tone, style, and level of professionalism."
+
+    - title: "📝 Quick Notes Across Tabs"
+      description: "Take notes instantly while browsing. Notes can be pinned and shared across multiple tabs so you can keep context everywhere."
+
+    - title: "⏰ Mini Tasks & Reminders"
+      description: "Create small daily tasks and reminders to stay focused. Designed for simple to-dos, not complex project tracking."
+
+    - title: "⌨️ Keyboard-First Workflow"
+      description: "Use shortcuts to trigger actions instantly, helping you stay in flow without relying on mouse clicks."
+
+    - title: "🛡️ Privacy & Control"
+      description: "Sensitive data like tokens, emails, and URLs are automatically masked. Control where the extension runs with whitelist and blacklist settings."
 
 audience:
-  title: "🎯 Who Is It For?"
-  description: "QuickAsk AI is designed for those who value clarity, efficiency, and seamless interaction with AI — wherever they are."
+  title: "🎯 Who Is QuickAsk AI For?"
+  description: "QuickAsk AI is built for people who work, learn, and think directly in the browser — and want AI, notes, and reminders without breaking focus."
   list:
-    - "🌐 Language learners needing accurate translations"
-    - "👨‍💻 Developers reading documentation in foreign languages"
-    - "💼 Professionals communicating with international clients"
-    - "📣 Marketers needing to rewrite or summarize content"
-    - "🎓 Students and researchers using multilingual sources"
-    - "🧠 Anyone who needs quick AI assistance without interrupting their workflow"
+    - "👨‍💻 Developers reading documentation, specs, or code in multiple languages"
+    - "🎓 Students learning, researching, and taking quick notes while browsing"
+    - "💼 Professionals working with international content or clients"
+    - "📣 Content creators and marketers rewriting, summarizing, or translating text"
+    - "🧠 Knowledge workers who need quick notes and small reminders during daily work"
+    - "⌨️ Anyone who prefers keyboard-first tools and minimal, distraction-free workflows"
 
 testimonials:
   title: "💬 What Our Users Say"
